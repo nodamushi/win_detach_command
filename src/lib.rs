@@ -1,5 +1,3 @@
-// src/lib.rs
-
 use std::collections::HashMap;
 use std::ffi::{OsStr, OsString};
 use std::io;
@@ -21,7 +19,7 @@ use windows::core::{PCWSTR, PWSTR};
 
 pub type Result<T> = io::Result<T>;
 
-/// Windowsプロセスをデタッチモードで起動
+/// Command for Windows detach process
 #[derive(Debug, Clone)]
 pub struct WinDetachCommand {
     executable: OsString,
